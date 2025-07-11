@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #e0f7fa, #f9f9ff);
+    color: #2c3e50;
+    line-height: 1.8;
+    animation: fadeIn 1s ease-in;
+}
+
+header, section, footer {
+    margin: 40px auto;
+    padding: 50px;
+    width: 95%;
+    max-width: 1100px;
+    background: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+header:hover, section:hover, footer:hover {
+    transform: scale(1.01);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.logo {
+    height: 70px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #002B5B;
+    background: linear-gradient(to right, #1e3a8a, #0096c7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    font-size: 36px;
+    color: #0077b6;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+h2::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: #00b4d8;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    border-radius: 5px;
+}
+
+h3 {
+    font-size: 28px;
+    margin-top: 40px;
+    color: #388e3c;
+}
+
+p {
+    font-size: 20px;
+}
+
+ul {
+    font-size: 20px;
+    padding-left: 25px;
+    margin-top: 15px;
+}
+
+ul ul {
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #f7f9fb;
+}
+
+table, td {
+    border: 2px solid #cfd8dc;
+}
+
+td {
+    padding: 18px;
+    font-size: 18px;
+}
+
+nav a {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 35px;
+    background: linear-gradient(to right, #1e3a8a, #00b4d8);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+
+nav a:hover {
+    background: linear-gradient(to right, #0096c7, #48cae4);
+    transform: scale(1.05);
+}
+
+a {
+    color: #0077b6;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    h1 { font-size: 36px; }
+    h2 { font-size: 26px; }
+    h3 { font-size: 22px; }
+    p, ul, td, nav a { font-size: 16px; }
+header, section, footer { padding: 25px; }
+}
